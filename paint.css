@@ -1,0 +1,113 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+  }
+  body{
+    background:#555;
+  }
+  .app{
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:1000px;
+    height:650px;
+    font-family:cursive;
+  }
+  
+  .app .controls{
+    height:50px;
+    bottom:0;
+    left:0;
+    width:1000px;
+    position:fixed;
+    align-items: center;
+    display:flex;
+    background-color:rgb(248, 3, 85);
+    padding:0px 10px;
+  }
+  .app .controls .title{
+    font-weight:600;
+    color:#eee;
+    width:90px;
+    margin-left: 40px;
+  }
+  .app .controls .type,
+  .app .controls .size,
+  .app .controls .color{
+    margin:0px 40px;
+  }
+  .app .controls .type input{
+    display:none;
+  }
+  .app .controls .type label{
+    width:30px;
+    height:30px;
+    display:inline-block;
+    text-align:center;
+    line-height:30px;
+    margin:0px 2px;
+    cursor:pointer;
+  }
+  .app .controls .type input:checked + label{
+      background: #111;
+      color:#eee;
+      border-radius:50%;
+  }
+  .app .controls .size input{
+      height:10px;
+      background:black;
+  }
+  .app .controls .actions{
+    text-align: right;
+  }
+  .app .controls .actions button{
+    background:#111;
+    border-radius: 10px;
+    padding:5px;
+    color:white;
+    cursor:pointer;
+    margin-left: 30px;
+  }
+  .app .controls .actions button:hover{
+    background:white;
+    color:black;
+  }
+@media (max-width:995px){
+  
+  .app .controls{
+    position:fixed;
+    height:600px;
+    width:150px;
+    
+    z-index:1;
+    top:0;
+    left:0;
+    background-color: rgb(248, 3, 85);
+    overflow-x:hidden;
+    display:block;
+  
+    }
+    .app .controls .title{
+      margin-top:40px;
+      font-size: 20px;
+      margin-left: 20px;
+      font-weight: 600px;
+      white-space: nowrap;
+    }
+    .app .controls .type,
+  .app .controls .size,
+  .app .controls .color{
+    margin:40px 10px;
+  }
+  .app .controls .type{
+    margin-left:30px;
+  }
+
+  .app .controls .actions button{
+    text-align: center;
+    margin-left:0;
+    margin-right:10px;
+  }
+}
