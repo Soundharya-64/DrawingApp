@@ -32,6 +32,7 @@
     color:#eee;
     width:90px;
     margin-left: 40px;
+    whitespace:nowrap;
   }
   .app .controls .type,
   .app .controls .size,
